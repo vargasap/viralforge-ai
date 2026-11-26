@@ -571,7 +571,7 @@
           </div>
         </div>
       </div>
-      <a href="https://t.me/viralforge_ai_bot" class="btn-telegram-direct" target="_blank" onclick="trackConversionEvent('click_telegram_bot')">
+      <a href="https://t.me/viral_forge_creator_bot" class="btn-telegram-direct" target="_blank" onclick="trackConversionEvent('click_telegram_bot')">
         <span>✈️ Bot Oficial</span>
       </a>
     </header>
@@ -758,7 +758,7 @@
           ⏳ Redirigiendo a Telegram en <strong id="redirectTimer" style="font-size:15px; color:#fff;">5</strong> segundos...
         </div>
 
-        <a href="https://t.me/viralforge_ai_bot?start=web_limit_3" class="primary-generate-btn" style="text-decoration:none;" onclick="trackConversionEvent('click_telegram_bot')">
+        <a href="https://t.me/viral_forge_creator_bot?start=web_limit_3" class="primary-generate-btn" style="text-decoration:none;" onclick="trackConversionEvent('click_telegram_bot')">
           <span>CONTINUAR EN TELEGRAM ✈️</span>
         </a>
       </div>
@@ -811,7 +811,7 @@
         if (timerEl) timerEl.innerText = seconds.toString();
         if (seconds <= 0) {
           clearInterval(redirectInterval);
-          window.location.href = 'https://t.me/viralforge_ai_bot?start=web_limit_3';
+          window.location.href = 'https://t.me/viral_forge_creator_bot?start=web_limit_3';
         }
       }, 1000);
     }
@@ -905,7 +905,7 @@
       lastGeneratedData['hooks'] = `🎯 GANCHOS VIRALES FORJADOS POR VIRAL FORGE AI ⚡\n\n` +
         `📌 Nicho/Tema: ${topic}\n\n` +
         selectedHooks.map((h, i) => `[Opción ${i+1}]: "${h}"`).join('\n\n') +
-        `\n\n🔥 Creado con @viralforge_ai_bot`;
+        `\n\n🔥 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('hooksResultBox').style.display = 'block';
     }
@@ -940,7 +940,7 @@
       lastGeneratedData['script'] = `🎬 GUIÓN VIRAL MAESTRO — VIRAL FORGE AI ⚡\n\n` +
         `📌 Tema: ${topic} | Duración: ${duration}\n\n` +
         steps.map(s => `[${s.time}]\nTexto: ${s.desc}\nCámara: ${s.cue}`).join('\n\n') +
-        `\n\n🚀 Creado con @viralforge_ai_bot`;
+        `\n\n🚀 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('scriptResultBox').style.display = 'block';
     }
@@ -971,7 +971,7 @@
       lastGeneratedData['angles'] = `🔥 4 ÁNGULOS DE VENTA VIRAL — VIRAL FORGE AI ⚡\n\n` +
         `📌 Producto/Servicio: ${product}\n\n` +
         angles.map(a => `${a.title}\n"${a.text}"`).join('\n\n') +
-        `\n\n💰 Creado con @viralforge_ai_bot`;
+        `\n\n💰 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('anglesResultBox').style.display = 'block';
     }
@@ -1015,7 +1015,7 @@
 
       lastGeneratedData['cta'] = `💰 CTAS PERSUASIVOS — VIRAL FORGE AI ⚡\n\n` +
         items.join('\n\n') +
-        `\n\n📲 Creado con @viralforge_ai_bot`;
+        `\n\n📲 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('ctaResultBox').style.display = 'block';
     }

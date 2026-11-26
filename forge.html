@@ -815,7 +815,7 @@
 
         <div style="margin-top:16px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08); text-align:center;">
           <button onclick="payInBotChat()" style="background:rgba(255,184,0,0.1); border:1px solid var(--accent-gold); color:var(--accent-gold); padding:10px 16px; border-radius:10px; font-size:12px; font-weight:800; cursor:pointer; width:100%;">
-            💬 Pagar con Factura Directa en el Chat (@viralforge_ai_bot)
+            💬 Pagar con Factura Directa en el Chat (@viral_forge_creator_bot)
           </button>
         </div>
       </div>
@@ -964,7 +964,7 @@
       lastGeneratedData['hooks'] = `🎯 GANCHOS VIRALES FORJADOS POR VIRAL FORGE AI ⚡\n\n` +
         `📌 Nicho/Tema: ${topic}\n\n` +
         selectedHooks.map((h, i) => `[Opción ${i+1}]: "${h}"`).join('\n\n') +
-        `\n\n🔥 Creado con @viralforge_ai_bot`;
+        `\n\n🔥 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('hooksResultBox').style.display = 'block';
     }
@@ -1001,7 +1001,7 @@
       lastGeneratedData['script'] = `🎬 GUIÓN VIRAL MAESTRO — VIRAL FORGE AI ⚡\n\n` +
         `📌 Tema: ${topic} | Duración: ${duration}\n\n` +
         steps.map(s => `[${s.time}]\nTexto: ${s.desc}\nCámara: ${s.cue}`).join('\n\n') +
-        `\n\n🚀 Creado con @viralforge_ai_bot`;
+        `\n\n🚀 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('scriptResultBox').style.display = 'block';
     }
@@ -1035,7 +1035,7 @@
       lastGeneratedData['angles'] = `🔥 4 ÁNGULOS DE VENTA VIRAL — VIRAL FORGE AI ⚡\n\n` +
         `📌 Producto/Servicio: ${product}\n\n` +
         angles.map(a => `${a.title}\n"${a.text}"`).join('\n\n') +
-        `\n\n💰 Creado con @viralforge_ai_bot`;
+        `\n\n💰 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('anglesResultBox').style.display = 'block';
     }
@@ -1081,7 +1081,7 @@
 
       lastGeneratedData['cta'] = `💰 CTAS PERSUASIVOS — VIRAL FORGE AI ⚡\n\n` +
         items.join('\n\n') +
-        `\n\n📲 Creado con @viralforge_ai_bot`;
+        `\n\n📲 Creado con @viral_forge_creator_bot`;
 
       document.getElementById('ctaResultBox').style.display = 'block';
     }
@@ -1103,9 +1103,9 @@
 
     // VIP Invoices (Telegram Stars)
     const VIP_INVOICES = {
-      'script_pack': 'https://t.me/$m2acf6MmQERAAQAAaJaViHeNn40',
-      'creator_30': 'https://t.me/$Grmvt6MmQERBAQAA43mzbB7R43Q',
-      'agency_lifetime': 'https://t.me/$3q1_dqMmQERCAQAAhPhdm551vhY'
+      'script_pack': 'https://t.me/$4Iul5CfjSEQyAgAAiQyoExD4ISY',
+      'creator_30': 'https://t.me/$nCDEgSfjSEQzAgAADdisbZtMLlk',
+      'agency_lifetime': 'https://t.me/$SHPBmifjSEQ0AgAAA2mWvgStofs'
     };
 
     function buyVip(tierId, stars) {
@@ -1145,7 +1145,7 @@
 
     function payInBotChat() {
       const tgApp = window.Telegram?.WebApp;
-      const botUrl = 'https://t.me/viralforge_ai_bot?start=vip';
+      const botUrl = 'https://t.me/viral_forge_creator_bot?start=vip';
       if (tgApp && typeof tgApp.openTelegramLink === 'function') {
         tgApp.openTelegramLink(botUrl);
       } else {
