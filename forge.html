@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Viral Forge AI 🎬⚡ Guiones & Hooks Virales</title>
+  <meta name="theme-color" content="#ff6b00">
+  <link rel="icon" type="image/jpeg" href="./avatar.jpg">
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4KYQCC8X5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M4KYQCC8X5');
+  </script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #070913;
+      --card-bg: #0d1122;
+      --card-border: rgba(255, 107, 0, 0.22);
+      --accent-viral: #ff6b00;
+      --accent-gold: #ffb800;
+      --accent-neon: #a855f7;
+      --accent-safe: #00ff88;
+      --text-main: #f3f6fc;
+      --text-muted: #8e9db5;
+      --glow-viral: 0 0 25px rgba(255, 107, 0, 0.4);
+      --glow-gold: 0 0 25px rgba(255, 184, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding-bottom: 95px;
+      position: relative;
+    }
+
+    /* Kinetic Grid Background */
+    .kinetic-grid {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: 
+        linear-gradient(rgba(255, 107, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 107, 0, 0.04) 1px, transparent 1px);
+      background-size: 26px 26px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Top Brand Bar */
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      background: rgba(13, 17, 34, 0.9);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 12px 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 107, 0, 0.25), rgba(168, 85, 247, 0.2));
+      border: 1px solid var(--accent-viral);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: var(--glow-viral);
+      animation: pulse-viral 3s infinite alternate;
+    }
+
+    @keyframes pulse-viral {
+      0% { box-shadow: 0 0 10px rgba(255, 107, 0, 0.3); }
+      100% { box-shadow: 0 0 25px rgba(255, 107, 0, 0.7); }
+    }
+
+    .brand-text h1 {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      background: linear-gradient(90deg, #fff, var(--accent-gold), var(--accent-viral));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-safe);
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-safe);
+      box-shadow: 0 0 8px var(--accent-safe);
+      animation: blink-dot 1.4s infinite;
+    }
+
+    @keyframes blink-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+
+    .vip-pill-btn {
+      background: linear-gradient(135deg, rgba(255, 184, 0, 0.15), rgba(255, 107, 0, 0.25));
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 13px;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 0 15px rgba(255, 184, 0, 0.2);
+      transition: all 0.2s;
+    }
+
+    .vip-pill-btn:active {
+      transform: scale(0.96);
+    }
+
+    /* Subheader Mission Banner */
+    .mission-banner {
+      background: linear-gradient(90deg, rgba(255, 107, 0, 0.12), rgba(168, 85, 247, 0.1));
+      border: 1px solid rgba(255, 107, 0, 0.25);
+      border-radius: 16px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mission-text {
+      font-size: 13px;
+      color: #cfd8ea;
+      line-height: 1.4;
+    }
+
+    .mission-text strong {
+      color: #fff;
+    }
+
+    /* Module Navigation Tabs */
+    .mod-tabs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .mod-tab-btn {
+      background: #0d1222;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 10px 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+
+    .mod-tab-btn span:first-child {
+      font-size: 20px;
+    }
+
+    .mod-tab-btn.active {
+      background: rgba(255, 107, 0, 0.15);
+      border-color: var(--accent-viral);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+    }
+
+    /* Workspace Cards */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .forge-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+      position: relative;
+    }
+
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+    }
+
+    .retention-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      background: rgba(255, 184, 0, 0.1);
+      border: 1px solid rgba(255, 184, 0, 0.3);
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    /* Form Inputs */
+    .forge-input-group {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .forge-input {
+      flex: 1;
+      background: #060914;
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .forge-input:focus {
+      border-color: var(--accent-viral);
+      box-shadow: 0 0 12px rgba(255, 107, 0, 0.3);
+    }
+
+    .forge-select {
+      width: 100%;
+      background: #060914;
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 13px 16px;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      outline: none;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .forge-textarea {
+      width: 100%;
+      height: 115px;
+      background: #060914;
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 14px;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      outline: none;
+      resize: none;
+      margin-bottom: 12px;
+    }
+
+    .forge-textarea:focus {
+      border-color: var(--accent-viral);
+    }
+
+    .primary-generate-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent-viral), #ff8800);
+      color: #000;
+      border: none;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: var(--glow-viral);
+      transition: all 0.2s;
+    }
+
+    .primary-generate-btn:active {
+      transform: scale(0.98);
+      filter: brightness(1.1);
+    }
+
+    /* Output Results Box */
+    .result-box {
+      background: #060914;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-top: 14px;
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .result-title {
+      font-size: 13px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .score-badge {
+      font-size: 13px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 5px 12px;
+      border-radius: 10px;
+      color: var(--accent-safe);
+      background: rgba(0, 255, 136, 0.12);
+      border: 1px solid var(--accent-safe);
+    }
+
+    .hook-item {
+      background: #0b1020;
+      border: 1px solid rgba(255, 107, 0, 0.2);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .hook-type {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent-gold);
+      margin-bottom: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .hook-text {
+      font-size: 14px;
+      line-height: 1.45;
+      color: #fff;
+    }
+
+    .script-timeline-step {
+      background: #0b1020;
+      border-left: 3px solid var(--accent-viral);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+    }
+
+    .step-time {
+      font-size: 11px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-gold);
+    }
+
+    .step-desc {
+      font-size: 13px;
+      color: #cfd8ea;
+      margin-top: 2px;
+    }
+
+    .step-cue {
+      font-size: 11px;
+      color: var(--accent-neon);
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    .action-row-copy {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .copy-btn {
+      flex: 1;
+      background: #12192e;
+      border: 1px solid var(--card-border);
+      color: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      border-color: var(--accent-viral);
+      color: var(--accent-viral);
+    }
+
+    /* Bottom Bar */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(7, 9, 19, 0.96);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 14px 18px;
+      z-index: 100;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .nav-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .nav-btn.active {
+      color: var(--accent-viral);
+    }
+
+    .nav-btn span:first-child {
+      font-size: 22px;
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: #0f152b;
+      border: 1px solid var(--accent-viral);
+      box-shadow: var(--glow-viral);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 12px 20px;
+      border-radius: 14px;
+      z-index: 9999;
+      pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      white-space: nowrap;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .toast-notice.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      z-index: 999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #0c1021;
+      border: 1px solid var(--accent-gold);
+      border-radius: 22px;
+      padding: 22px 20px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 0 35px rgba(255, 184, 0, 0.3);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .vip-tier-item {
+      background: #11182d;
+      border: 1px solid rgba(255, 184, 0, 0.2);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="kinetic-grid"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header-bar">
+      <div class="brand-box">
+        <div class="brand-logo-icon">🎬</div>
+        <div class="brand-text">
+          <h1>Viral Forge AI</h1>
+          <div class="brand-badge">
+            <span class="pulse-dot"></span>
+            MOTOR DE VIRALIDAD ACTIVO
+          </div>
+        </div>
+      </div>
+      <button class="vip-pill-btn" onclick="openVipModal()">
+        <span>⭐ VIP</span>
+      </button>
+    </header>
+
+    <!-- Mission Banner -->
+    <div class="mission-banner">
+      <div class="mission-text">
+        <strong>Fábrica de Retención TikTok & Reels:</strong> Genera ganchos que frenan el scroll, guiones de alta conversión y ángulos de monetización.
+      </div>
+    </div>
+
+    <!-- Quick Module Navigation -->
+    <div class="mod-tabs-grid">
+      <div class="mod-tab-btn active" onclick="switchModTab('hooks', this)">
+        <span>🎯</span> <span>Hooks 3s</span>
+      </div>
+      <div class="mod-tab-btn" onclick="switchModTab('script', this)">
+        <span>🎬</span> <span>Guiones</span>
+      </div>
+      <div class="mod-tab-btn" onclick="switchModTab('angles', this)">
+        <span>🔥</span> <span>Ángulos</span>
+      </div>
+      <div class="mod-tab-btn" onclick="switchModTab('cta', this)">
+        <span>💰</span> <span>CTAs Venta</span>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 1: HOOKS VIRALES ==================== -->
+    <div class="tab-content active" id="mod-hooks">
+      <div class="forge-card">
+        <div class="card-title-row">
+          <div class="card-title"><span>🎯</span> Ganchos de 3 Segundos (Stop-Scroll)</div>
+          <span class="retention-tag">RETENCIÓN 98%</span>
+        </div>
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-bottom:6px;">Nicho o Tema de tu Video:</label>
+        <div class="forge-input-group">
+          <input type="text" class="forge-input" id="hookTopicInput" placeholder="Ej. Cómo ganar dinero con IA, Cripto, Fitness..." value="Cómo crear un negocio online con Inteligencia Artificial">
+        </div>
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-bottom:6px;">Gatillo Psicológico:</label>
+        <select class="forge-select" id="hookTriggerSelect">
+          <option value="curiosity">🔍 Brecha de Curiosidad ("El 99% no sabe esto...")</option>
+          <option value="pattern">⚡ Interrupción de Patrón ("Deja de hacer esto ya")</option>
+          <option value="fomo">⏳ Urgencia / FOMO ("Se acaba este mes...")</option>
+          <option value="controversy">🔥 Polémica / Antítesis ("Por qué la universidad te engañó")</option>
+          <option value="lazy">💡 Hack para Perezosos ("La forma más vaga de...")</option>
+        </select>
+
+        <button class="primary-generate-btn" onclick="generateHooks()">
+          <span>⚡ FORJAR 3 GANCHOS VIRALES</span>
+        </button>
+
+        <div class="result-box" id="hooksResultBox">
+          <div class="result-header">
+            <span class="result-title">GANCHOS AUDITADOS</span>
+            <span class="score-badge" id="hookScoreBadge">97% IMPACTO</span>
+          </div>
+          <div id="hooksListContainer"></div>
+          <div class="action-row-copy">
+            <button class="copy-btn" onclick="copyResultContent('hooks')">
+              <span>📋 Copiar Ganchos</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 2: ARQUITECTO DE GUIONES ==================== -->
+    <div class="tab-content" id="mod-script">
+      <div class="forge-card">
+        <div class="card-title-row">
+          <div class="card-title"><span>🎬</span> Arquitecto de Guiones Virales</div>
+          <span class="retention-tag">ESTRUCTURA RETENCIÓN</span>
+        </div>
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-bottom:6px;">Tema o Producto Central:</label>
+        <input type="text" class="forge-input" id="scriptTopicInput" placeholder="Ej. Trading algorítmico, Dropshipping, Finanzas..." value="Cómo ganar comisiones recomendando herramientas de IA">
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-top:10px; margin-bottom:6px;">Duración del Video:</label>
+        <select class="forge-select" id="scriptDurationSelect">
+          <option value="15s">⚡ 15 Segundos (Máxima Viralidad & Re-plays)</option>
+          <option value="30s" selected>🎯 30 Segundos (Formato Estándar TikTok / Reels)</option>
+          <option value="60s">📚 60 Segundos (Educativo, Storytelling & Venta Alta)</option>
+        </select>
+
+        <button class="primary-generate-btn" onclick="generateScript()">
+          <span>🎬 ARQUITECTAR GUIÓN COMPLETO</span>
+        </button>
+
+        <div class="result-box" id="scriptResultBox">
+          <div class="result-header">
+            <span class="result-title">ESCALETA PROFESIONAL</span>
+            <span class="score-badge">RETENCIÓN MÁXIMA</span>
+          </div>
+          <div id="scriptTimelineContainer"></div>
+          <div class="action-row-copy">
+            <button class="copy-btn" onclick="copyResultContent('script')">
+              <span>📋 Copiar Guión Completo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 3: ÁNGULOS DE TRÁFICO ==================== -->
+    <div class="tab-content" id="mod-angles">
+      <div class="forge-card">
+        <div class="card-title-row">
+          <div class="card-title"><span>🔥</span> Generador de Ángulos de Venta</div>
+          <span class="retention-tag">PSICOLOGÍA DE COMPRA</span>
+        </div>
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-bottom:6px;">¿Qué estás vendiendo o promocionando?:</label>
+        <input type="text" class="forge-input" id="angleProductInput" placeholder="Ej. Curso de inglés, Bot de trading, Suplementos..." value="Membresía VIP a señales de Cripto y bots automatizados">
+
+        <button class="primary-generate-btn" style="margin-top:12px;" onclick="generateAngles()">
+          <span>🔥 DESCUBRIR 4 ÁNGULOS PERSUASIVOS</span>
+        </button>
+
+        <div class="result-box" id="anglesResultBox">
+          <div class="result-header">
+            <span class="result-title">ÁNGULOS DE ALTA CONVERSIÓN</span>
+            <span class="score-badge">PERSUASIÓN 9.8/10</span>
+          </div>
+          <div id="anglesListContainer"></div>
+          <div class="action-row-copy">
+            <button class="copy-btn" onclick="copyResultContent('angles')">
+              <span>📋 Copiar Ángulos</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 4: CTAS DE VENTA ==================== -->
+    <div class="tab-content" id="mod-cta">
+      <div class="forge-card">
+        <div class="card-title-row">
+          <div class="card-title"><span>💰</span> Llamadas a la Acción (CTAs)</div>
+          <span class="retention-tag">CONVERSIÓN DIRECTA</span>
+        </div>
+
+        <label style="font-size:12px; color:var(--text-muted); display:block; margin-bottom:6px;">Objetivo del Video:</label>
+        <select class="forge-select" id="ctaGoalSelect">
+          <option value="dm">💬 Que te envíen un DM ("Comenta 'ROBOT' y te lo paso")</option>
+          <option value="comment">🔥 Disparar comentarios y debate en el algoritmo</option>
+          <option value="bio">🔗 Que vayan al enlace de tu perfil / bio</option>
+          <option value="follow">➕ Que te sigan para más hacks de este nicho</option>
+        </select>
+
+        <button class="primary-generate-btn" onclick="generateCtas()">
+          <span>💰 GENERAR CTAS CON GATILLOS</span>
+        </button>
+
+        <div class="result-box" id="ctaResultBox">
+          <div class="result-header">
+            <span class="result-title">CTAS HIPNOTIZANTES</span>
+            <span class="score-badge">VIRAL CLOSER</span>
+          </div>
+          <div id="ctaListContainer"></div>
+          <div class="action-row-copy">
+            <button class="copy-btn" onclick="copyResultContent('cta')">
+              <span>📋 Copiar CTAs</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIP Stars Modal -->
+    <div class="modal-overlay" id="vipModal">
+      <div class="modal-card">
+        <button class="modal-close" onclick="closeVipModal()">✕</button>
+        <div style="font-size:20px; font-weight:800; color:var(--accent-gold); margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <span>⭐</span> Viral Forge VIP Stars
+        </div>
+        <div style="font-size:12px; color:var(--text-muted); margin-bottom:16px; line-height:1.45;">
+          Desbloquea guiones ilimitados, análisis de retención por IA y fórmulas de micro-pago con Telegram Stars (XTR).
+        </div>
+
+        <div class="vip-tier-item">
+          <div>
+            <div style="font-size:14px; font-weight:800; color:#fff;">⚡ Pack Guiones Express</div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">5 Guiones completos + 15 Hooks auditados</div>
+          </div>
+          <button style="background:var(--accent-gold); border:none; color:#000; font-weight:900; font-size:13px; padding:8px 14px; border-radius:10px; cursor:pointer;" onclick="buyVip('script_pack', 25)">
+            25 ⭐
+          </button>
+        </div>
+
+        <div class="vip-tier-item">
+          <div>
+            <div style="font-size:14px; font-weight:800; color:#fff;">🚀 Pase Creador Pro (30 Días)</div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">Generación ilimitada + Fórmulas de Monetización</div>
+          </div>
+          <button style="background:var(--accent-gold); border:none; color:#000; font-weight:900; font-size:13px; padding:8px 14px; border-radius:10px; cursor:pointer;" onclick="buyVip('creator_30', 99)">
+            99 ⭐
+          </button>
+        </div>
+
+        <div class="vip-tier-item">
+          <div>
+            <div style="font-size:14px; font-weight:800; color:#fff;">👑 Licencia Agencia Vitalicia</div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">Acceso de por vida sin límites + Plantillas Ads</div>
+          </div>
+          <button style="background:var(--accent-gold); border:none; color:#000; font-weight:900; font-size:13px; padding:8px 14px; border-radius:10px; cursor:pointer;" onclick="buyVip('agency_lifetime', 299)">
+            299 ⭐
+          </button>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08); text-align:center;">
+          <button onclick="payInBotChat()" style="background:rgba(255,184,0,0.1); border:1px solid var(--accent-gold); color:var(--accent-gold); padding:10px 16px; border-radius:10px; font-size:12px; font-weight:800; cursor:pointer; width:100%;">
+            💬 Pagar con Factura Directa en el Chat (@viralforge_ai_bot)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-bar">
+      <button class="nav-btn active" onclick="switchModTab('hooks', this)">
+        <span>🎯</span> <span>Hooks</span>
+      </button>
+      <button class="nav-btn" onclick="switchModTab('script', this)">
+        <span>🎬</span> <span>Guiones</span>
+      </button>
+      <button class="nav-btn" onclick="switchModTab('angles', this)">
+        <span>🔥</span> <span>Ángulos</span>
+      </button>
+      <button class="nav-btn" onclick="switchModTab('cta', this)">
+        <span>💰</span> <span>CTAs</span>
+      </button>
+      <button class="nav-btn" onclick="openVipModal()">
+        <span>⭐</span> <span>VIP Stars</span>
+      </button>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div class="toast-notice" id="toastNotice"></div>
+  </div>
+
+  <script>
+    // Audio FX Engine
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playViralSound(freq = 600, type = 'sine', duration = 0.08) {
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotice');
+      if (toast) {
+        toast.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2400);
+      }
+    }
+
+    // Telegram WebApp Setup
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+      if (typeof tg.requestFullscreen === 'function') {
+        try { tg.requestFullscreen(); } catch (e) {}
+      }
+      if (typeof tg.disableVerticalSwipes === 'function') {
+        try { tg.disableVerticalSwipes(); } catch (e) {}
+      }
+      try { tg.headerColor = '#070913'; } catch (e) {}
+      try { tg.backgroundColor = '#070913'; } catch (e) {}
+    }
+
+    // Tab Switching
+    function switchModTab(tabId, el) {
+      playViralSound(700, 'sine', 0.05);
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.mod-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+      const activeContent = document.getElementById(`mod-${tabId}`);
+      if (activeContent) activeContent.classList.add('active');
+      if (el) el.classList.add('active');
+    }
+
+    // Modals
+    function openVipModal() {
+      playViralSound(850, 'sine', 0.08);
+      document.getElementById('vipModal').classList.add('open');
+    }
+    function closeVipModal() {
+      document.getElementById('vipModal').classList.remove('open');
+    }
+
+    // Data Storage for Copying
+    let lastGeneratedData = {};
+
+    // 1. Generate Hooks
+    function generateHooks() {
+      playViralSound(900, 'triangle', 0.12);
+      const topic = document.getElementById('hookTopicInput').value.trim() || 'ganar dinero online';
+      const trigger = document.getElementById('hookTriggerSelect').value;
+
+      showToast('⚡ Generando ganchos con alta retención...');
+
+      const hookTemplates = {
+        curiosity: [
+          `El 99% de las personas hace ${topic} mal, y esta es la razón por la que no ven resultados...`,
+          `No te compres nada hasta que conozcas este secreto de ${topic}...`,
+          `Existe una razón por la que nadie en TikTok te cuenta la verdad sobre ${topic}...`
+        ],
+        pattern: [
+          `DETÉN EL SCROLL. Si estás intentando ${topic}, necesitas escuchar esto antes de las 12...`,
+          `Borra todo lo que te enseñaron sobre ${topic}. Lo que funciona en 2026 es esto:`,
+          `No vuelvas a perder el tiempo con ${topic} tradicional. Mira esto:`
+        ],
+        fomo: [
+          `Esta ventana para dominar ${topic} se va a cerrar en las próximas 48 horas...`,
+          `Solo un puñado de personas está aprovechando esto de ${topic} en silencio...`,
+          `Si no comienzas con ${topic} esta semana, te vas a arrepentir los próximos 6 meses...`
+        ],
+        controversy: [
+          `La razón por la que la mayoría fracasa con ${topic} es porque siguen a la masa...`,
+          `Dicen que ${topic} está saturado, pero la realidad es que no tienen ni idea...`,
+          `Por qué los "gurús" de ${topic} están perdiendo seguidores mientras este método explota:`
+        ],
+        lazy: [
+          `La forma más fácil y perezosa de lograr ${topic} sin complicarte la vida:`,
+          `Literalmente solo necesitas 10 minutos al día para dominar ${topic} con esta fórmula:`,
+          `Copiar y pegar: el método sin esfuerzo para conseguir resultados en ${topic}:`
+        ]
+      };
+
+      const selectedHooks = hookTemplates[trigger] || hookTemplates['curiosity'];
+      const container = document.getElementById('hooksListContainer');
+      container.innerHTML = '';
+
+      selectedHooks.forEach((h, idx) => {
+        const div = document.createElement('div');
+        div.className = 'hook-item';
+        div.innerHTML = `
+          <div class="hook-type">VARIANTE #${idx + 1} — RETENCIÓN ${95 + idx}%</div>
+          <div class="hook-text">"${h}"</div>
+        `;
+        container.appendChild(div);
+      });
+
+      lastGeneratedData['hooks'] = `🎯 GANCHOS VIRALES FORJADOS POR VIRAL FORGE AI ⚡\n\n` +
+        `📌 Nicho/Tema: ${topic}\n\n` +
+        selectedHooks.map((h, i) => `[Opción ${i+1}]: "${h}"`).join('\n\n') +
+        `\n\n🔥 Creado con @viralforge_ai_bot`;
+
+      document.getElementById('hooksResultBox').style.display = 'block';
+    }
+
+    // 2. Generate Script
+    function generateScript() {
+      playViralSound(950, 'triangle', 0.15);
+      const topic = document.getElementById('scriptTopicInput').value.trim() || 'crear contenido viral';
+      const duration = document.getElementById('scriptDurationSelect').value;
+
+      showToast(`🎬 Arquitectando guión de ${duration}...`);
+
+      const container = document.getElementById('scriptTimelineContainer');
+      container.innerHTML = '';
+
+      const steps = [
+        { time: '0:00 - 0:03 (HOOK)', desc: `Detén el scroll: "Si quieres dominar ${topic}, hay un atajo que te están ocultando."`, cue: 'Visual: Primer plano a la cámara con texto en pantalla parpadeando en rojo/amarillo.' },
+        { time: '0:03 - 0:10 (EL PROBLEMA)', desc: `La mayoría pasa horas intentando ${topic} sin ver ni un solo resultado porque usan métodos del 2022.`, cue: 'Visual: Corte rápido mostrando frustración o pantalla con números bajos.' },
+        { time: '0:10 - 0:22 (LA REVELACIÓN)', desc: `Lo que hacen los creadores del 1% es aplicar una palanca de automatización que multiplica el impacto por diez.`, cue: 'Visual: Señalar a la pantalla mostrando la solución en acción.' },
+        { time: '0:22 - 0:30 (LLAMADA A LA ACCIÓN)', desc: `Comenta la palabra "VIRAL" abajo y te mando el paso a paso exacto a tus mensajes antes de que lo borren.`, cue: 'Visual: Apuntar abajo a la sección de comentarios con subtítulos dinámicos.' }
+      ];
+
+      steps.forEach(s => {
+        const div = document.createElement('div');
+        div.className = 'script-timeline-step';
+        div.innerHTML = `
+          <div class="step-time">⏱️ ${s.time}</div>
+          <div class="step-desc">${s.desc}</div>
+          <div class="step-cue">${s.cue}</div>
+        `;
+        container.appendChild(div);
+      });
+
+      lastGeneratedData['script'] = `🎬 GUIÓN VIRAL MAESTRO — VIRAL FORGE AI ⚡\n\n` +
+        `📌 Tema: ${topic} | Duración: ${duration}\n\n` +
+        steps.map(s => `[${s.time}]\nTexto: ${s.desc}\nCámara: ${s.cue}`).join('\n\n') +
+        `\n\n🚀 Creado con @viralforge_ai_bot`;
+
+      document.getElementById('scriptResultBox').style.display = 'block';
+    }
+
+    // 3. Generate Angles
+    function generateAngles() {
+      playViralSound(800, 'sawtooth', 0.1);
+      const product = document.getElementById('angleProductInput').value.trim() || 'Servicio Digital';
+
+      showToast('🔥 Creando ángulos de venta persuasivos...');
+      const container = document.getElementById('anglesListContainer');
+      container.innerHTML = '';
+
+      const angles = [
+        { title: '1. Ángulo del Enemigo Común (Dolor Agudo)', text: `Ataca el sistema tradicional: "Por qué seguir gastando miles en soluciones lentas cuando ${product} lo resuelve en minutos."` },
+        { title: '2. Ángulo de Estatus y Libertad', text: `Vende el resultado final, no la herramienta: "Cómo usar ${product} para no volver a depender de un jefe este año."` },
+        { title: '3. Ángulo de la Curiosidad Técnica', text: `Muestra el mecanismo secreto: "Descubrí el algoritmo detrás de ${product} y esto fue lo que pasó en mi cuenta."` },
+        { title: '4. Ángulo de Transformación Relámpago', text: `Prueba social inmediata: "De 0 a resultados reales en solo 7 días aplicando ${product} paso a paso."` }
+      ];
+
+      angles.forEach(a => {
+        const div = document.createElement('div');
+        div.className = 'hook-item';
+        div.innerHTML = `
+          <div class="hook-type">${a.title}</div>
+          <div class="hook-text">${a.text}</div>
+        `;
+        container.appendChild(div);
+      });
+
+      lastGeneratedData['angles'] = `🔥 4 ÁNGULOS DE VENTA VIRAL — VIRAL FORGE AI ⚡\n\n` +
+        `📌 Producto/Servicio: ${product}\n\n` +
+        angles.map(a => `${a.title}\n"${a.text}"`).join('\n\n') +
+        `\n\n💰 Creado con @viralforge_ai_bot`;
+
+      document.getElementById('anglesResultBox').style.display = 'block';
+    }
+
+    // 4. Generate CTAs
+    function generateCtas() {
+      playViralSound(850, 'sine', 0.1);
+      const goal = document.getElementById('ctaGoalSelect').value;
+      showToast('💰 Forjando CTAs hipnotizantes...');
+
+      const ctaData = {
+        dm: [
+          `💬 "Comenta 'FORGE' abajo y te envío la plantilla completa a tu DM al instante."`,
+          `💬 "Escribe la palabra 'SECRETO' en comentarios si quieres que te mande el enlace directo."`
+        ],
+        comment: [
+          `🔥 "¿Estás de acuerdo o crees que esto no funciona? Los leo a todos en comentarios."`,
+          `🔥 "Déjame en los comentarios tu mayor error con esto y te respondo con una solución."`
+        ],
+        bio: [
+          `🔗 "El enlace con todos los recursos gratuitos está en mi biografía. Corre antes de que expire."`,
+          `🔗 "Toca el link de mi perfil para acceder a la herramienta antes de que se haga de pago."`
+        ],
+        follow: [
+          `➕ "Si quieres más trucos que no te cuentan los gurús, sígueme y guarda este video."`,
+          `➕ "Dale a seguir para no perderte la parte 2 de este tutorial mañana."`
+        ]
+      };
+
+      const items = ctaData[goal] || ctaData['dm'];
+      const container = document.getElementById('ctaListContainer');
+      container.innerHTML = '';
+
+      items.forEach((c, idx) => {
+        const div = document.createElement('div');
+        div.className = 'hook-item';
+        div.innerHTML = `
+          <div class="hook-type">OPCIÓN CTA #${idx + 1}</div>
+          <div class="hook-text">${c}</div>
+        `;
+        container.appendChild(div);
+      });
+
+      lastGeneratedData['cta'] = `💰 CTAS PERSUASIVOS — VIRAL FORGE AI ⚡\n\n` +
+        items.join('\n\n') +
+        `\n\n📲 Creado con @viralforge_ai_bot`;
+
+      document.getElementById('ctaResultBox').style.display = 'block';
+    }
+
+    // Copy Utility
+    function copyResultContent(key) {
+      playViralSound(700, 'sine', 0.06);
+      const text = lastGeneratedData[key];
+      if (!text) return;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('📋 ¡Copiado con éxito al portapapeles!');
+        });
+      } else {
+        showToast('📋 Contenido generado listo para usar.');
+      }
+    }
+
+    // VIP Invoices (Telegram Stars)
+    const VIP_INVOICES = {
+      'script_pack': 'https://t.me/$m2acf6MmQERAAQAAaJaViHeNn40',
+      'creator_30': 'https://t.me/$Grmvt6MmQERBAQAA43mzbB7R43Q',
+      'agency_lifetime': 'https://t.me/$3q1_dqMmQERCAQAAhPhdm551vhY'
+    };
+
+    function buyVip(tierId, stars) {
+      playViralSound(1000, 'sine', 0.15);
+      const invoiceUrl = VIP_INVOICES[tierId] || VIP_INVOICES['creator_30'];
+      showToast(`⭐ Abriendo pasarela de pago de ${stars} Stars...`);
+
+      const tgApp = window.Telegram?.WebApp;
+      if (tgApp && typeof tgApp.openInvoice === 'function') {
+        try {
+          tgApp.openInvoice(invoiceUrl, function(status) {
+            if (status === 'paid') {
+              showToast('🎉 ¡Pago exitoso! Acceso VIP Creador activado.');
+              localStorage.setItem('viralforge_vip', 'true');
+              closeVipModal();
+            } else if (status === 'cancelled') {
+              showToast('ℹ️ Pago cancelado.');
+            } else {
+              if (typeof tgApp.openTelegramLink === 'function') {
+                tgApp.openTelegramLink(invoiceUrl);
+              }
+            }
+          });
+          return;
+        } catch (e) {
+          console.warn('openInvoice error:', e);
+        }
+      }
+
+      if (tgApp && typeof tgApp.openTelegramLink === 'function') {
+        tgApp.openTelegramLink(invoiceUrl);
+        return;
+      }
+
+      window.open(invoiceUrl, '_blank');
+    }
+
+    function payInBotChat() {
+      const tgApp = window.Telegram?.WebApp;
+      const botUrl = 'https://t.me/viralforge_ai_bot?start=vip';
+      if (tgApp && typeof tgApp.openTelegramLink === 'function') {
+        tgApp.openTelegramLink(botUrl);
+      } else {
+        window.open(botUrl, '_blank');
+      }
+    }
+
+    // ==========================================
+    // SUITE DE SEGURIDAD: ANTI-ROBO & ANTI-SPAM
+    // ==========================================
+    document.addEventListener('contextmenu', (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      e.preventDefault();
+      showToast('🛡️ Viral Forge AI: Código y algoritmos protegidos contra robo.');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        showToast('🛡️ Herramientas de inspección deshabilitadas.');
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C', 'i', 'j', 'c'].includes(e.key)) {
+        e.preventDefault();
+        showToast('🛡️ Acceso de inspección bloqueado.');
+        return false;
+      }
+      if (e.ctrlKey && ['u', 'U', 's', 'S'].includes(e.key)) {
+        e.preventDefault();
+        showToast('🛡️ Extracción de código bloqueada.');
+        return false;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vargasap.github.io/viralforge-ai/sitemap.xml
